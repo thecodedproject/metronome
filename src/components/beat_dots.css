@@ -1,0 +1,37 @@
+.beatDots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  max-width: 22rem;
+  min-height: 1.6rem;
+}
+
+.beatDot {
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 2px solid var(--fg-muted);
+  border-radius: 50%;
+  transition: background-color 60ms;
+}
+
+.beatDot.accent {
+  width: 1.45rem;
+  height: 1.45rem;
+}
+
+.beatDot.silent {
+  border-style: dashed;
+  border-color: var(--fg-faint);
+}
+
+.beatDot.on {
+  border-color: var(--accent);
+  background: var(--accent);
+}
+
+.beatDot.silent.on {
+  border-color: var(--fg-faint);
+  background: var(--fg-faint);
+}

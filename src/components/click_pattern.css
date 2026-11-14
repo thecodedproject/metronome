@@ -1,0 +1,74 @@
+.clickPattern {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.patternChoices {
+  display: flex;
+  padding: 3px;
+  border: 1.5px solid var(--border);
+  border-radius: 0.9rem;
+}
+
+.patternChoice,
+.accentToggle {
+  color: var(--fg-muted);
+}
+
+.patternChoice {
+  padding: 0.45rem 0.65rem;
+  border-radius: 0.65rem;
+}
+
+.patternChoice:hover,
+.accentToggle:hover {
+  color: var(--fg);
+}
+
+.patternChoice.selected {
+  background: var(--selected-bg);
+  color: var(--fg);
+}
+
+.barIcon {
+  display: block;
+  height: 1.7rem;
+  fill: currentColor;
+}
+
+.accentToggle {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  height: 2.9rem;
+  padding: 0 0.85rem;
+  border: 1.5px solid var(--border);
+  border-radius: 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.accentToggle svg {
+  width: 1.1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.accentToggle.selected {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+/* the rests are drawn thin; a fine outline brings them up to the weight of the notes */
+.barIcon path {
+  stroke: currentColor;
+  stroke-width: 0.7;
+  stroke-linejoin: round;
+}
